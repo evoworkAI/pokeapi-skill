@@ -10,6 +10,8 @@ description: |
 
 公开接口，不用 Key。地址：`https://pokeapi.co/api/v2/`
 
+脚本用 Node.js 运行，不要找 Python。这期已经装过 Node。需要 18 或更新的版本。
+
 精灵图不要用绘图模型重画，用这里的官方图。这期片子用第三世代翡翠版。
 
 ## 查一只
@@ -17,15 +19,15 @@ description: |
 在本 skill 目录执行。stdout 是 JSON，精灵图另存时会多打印绝对路径。
 
 ```bash
-python3 scripts/poke.py pikachu
-python3 scripts/poke.py 25 --out pikachu.png
-python3 scripts/poke.py charizard --sprite default --out charizard.png
+node scripts/poke.mjs pikachu
+node scripts/poke.mjs 25 --out pikachu.png
+node scripts/poke.mjs charizard --sprite default --out charizard.png
 ```
 
 装到本机之后：
 
-- `~/.claude/skills/pokeapi/scripts/poke.py`
-- `~/.cursor/skills/pokeapi/scripts/poke.py`
+- `~/.claude/skills/pokeapi/scripts/poke.mjs`
+- `~/.cursor/skills/pokeapi/scripts/poke.mjs`
 
 `--sprite gen3` 是默认，第三世代翡翠正面图。`--sprite default` 是通用正面图。
 

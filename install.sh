@@ -32,4 +32,4 @@ fi
 
 echo
 echo "不用填 Key。试一下："
-echo "  python3 ~/.claude/skills/$SKILL_NAME/scripts/poke.py pikachu"
+echo "  node ~/.claude/skills/$SKILL_NAME/scripts/poke.mjs pikachu"

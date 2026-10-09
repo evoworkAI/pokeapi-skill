@@ -9,5 +9,5 @@ npx skills add evoworkAI/pokeapi-skill -g -y
 试一下：
 
 ```bash
-python3 ~/.claude/skills/pokeapi/scripts/poke.py pikachu
+node ~/.claude/skills/pokeapi/scripts/poke.mjs pikachu
 ```
